@@ -6,14 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <title>Document</title>
     </head>
     <body>
+       
         <div class="content">
-            <h3>Your To Do App</h3>
+            <div class="header"> 
+                <h3>Your To Do App</h3>
+                <h4 id="date"></h4>
+            </div>
             <div class="row">
                 <form>
-                    <input type="text" id="task" name="task">
+                    <textarea type="text" class="task" id="task" name="task"></textarea>
                 </form>
                 <button id="addButton"> + Add a Task</button>
                 <button id="clearButton"> Clear </button>
